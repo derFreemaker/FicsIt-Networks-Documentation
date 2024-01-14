@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+			"label": "create classes and structs intellisense",
+			"command": "lua",
+			"args": [
+				"${workspaceFolder}/Tools/CreateClassesAndStructsIntellisense.lua",
+				"${workspaceFolder}/API Documentations"
+			],
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "never",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": true,
+				"close": true
+			}
+		},
+		{
+			"label": "create documentation",
+			"command": "lua",
+			"args": [
+				"${workspaceFolder}/Tools/CreateDocumentation.lua",
+				"${workspaceFolder}/Tools/DocUpdater/DocUpdater.exe",
+				"${workspaceFolder}/API Documentations",
+				"${workspaceFolder}/.pages/content/docs"
+			],
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "never",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": true,
+				"close": true
+			}
+		}
+    ]
+}
