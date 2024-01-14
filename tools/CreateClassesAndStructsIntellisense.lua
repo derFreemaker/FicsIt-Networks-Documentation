@@ -1,11 +1,12 @@
-local FileSystem = require("tools.FileSystem")
+local Path = require("tools.Freemaker.bin.path")
+local FileSystem = require("tools.Freemaker.bin.filesystem")
 
 local args = { ... }
 if #args < 1 then
     error("not all args given")
 end
 
-local ApiDocumentations = FileSystem.Path(args[1])
+local ApiDocumentations = Path.new(args[1])
 
 ---@param path Freemaker.FileSystem.Path
 ---@param childs string[]
@@ -58,8 +59,11 @@ end
 local satisfactoryClasses, satisfactoryStructs = documentSatisfactory()
 local ficsItNetworksClasses, ficsItNetworksStructs = documentFicsItNetworks()
 
-local file = FileSystem.OpenFile(
-    ApiDocumentations:Extend("/FicsIt-Networks/Intellisense/classes&structs.lua"):ToString(), "w")
+local outputFilePath = ApiDocumentations:Extend("/FicsIt-Networks/classes&structs.lua")
+local file = FileSystem.OpenFile(outputFilePath:ToString(), "w")
+if not file then
+    error("unable to open file: " .. outputFilePath:ToString())
+end
 file:write("---@meta\n\n")
 file:write("---@class classes\n")
 

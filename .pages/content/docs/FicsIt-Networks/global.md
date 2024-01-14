@@ -1,13 +1,13 @@
 ---
 title: FIN.Global.Api
-date: "2023-12-06"
+date: "2024-01-14"
 ---
 
 # FIN.Global.Api
 
 
 
-## getItems(...string name) -> ...FIN.ItemType
+## getItems(...string) -> ...FIN.ItemType
 
 Tries to find the items or item provided via name.
 
@@ -15,7 +15,7 @@ Tries to find the items or item provided via name.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| ... | string name |  |
+| ... | string |  |
 
 **Returns**
 

@@ -1,6 +1,6 @@
 ---
 title: FIN.Component.Api
-date: "2023-12-06"
+date: "2024-01-14"
 ---
 
 # FIN.Component.Api

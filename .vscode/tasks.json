@@ -6,7 +6,7 @@
 			"command": "lua",
 			"args": [
 				"${workspaceFolder}/tools/CreateClassesAndStructsIntellisense.lua",
-				"${workspaceFolder}/API Documentations"
+				"${workspaceFolder}"
 			],
 			"problemMatcher": [],
 			"presentation": {
@@ -25,7 +25,7 @@
 			"args": [
 				"${workspaceFolder}/tools/CreateDocumentation.lua",
 				"${workspaceFolder}/tools/DocUpdater/DocUpdater.exe",
-				"${workspaceFolder}/API Documentations",
+				"${workspaceFolder}",
 				"${workspaceFolder}/.pages/content/docs"
 			],
 			"problemMatcher": [],
@@ -36,6 +36,23 @@
 				"panel": "shared",
 				"showReuseMessage": true,
 				"clear": true,
+				"close": true
+			}
+		},
+		{
+			"label": "update documentation",
+			"dependsOn":[
+				"create classes and structs intellisense",
+				"create documentation"
+			],
+			"problemMatcher": [],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false,
 				"close": true
 			}
 		}

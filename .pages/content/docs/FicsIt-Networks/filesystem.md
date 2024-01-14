@@ -1,6 +1,6 @@
 ---
 title: FIN.Filesystem.Api
-date: "2023-12-06"
+date: "2024-01-14"
 ---
 
 # FIN.Filesystem.Api
@@ -63,7 +63,7 @@ The DevDevice is special Device holding DeviceNodes for all filesystems added to
 | ---- | ---- | ----------- |
 | success | boolean | returns if it was able to mount the DevDevice |
 
-## filesystem.open(path: string, mode: FIN.Filesystem.openmode) -> File: FIN.Filesystem.File
+## filesystem.open(path: string, mode: FIN.Filesystem.File.Openmode) -> File: FIN.Filesystem.File
 
 Opens a file-stream and returns it as File-table.
 
@@ -72,7 +72,7 @@ Opens a file-stream and returns it as File-table.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | path | string |  |
-| mode | FIN.Filesystem.openmode |  |
+| mode | FIN.Filesystem.File.Openmode |  |
 
 **Returns**
 
@@ -95,7 +95,7 @@ Creates the folder path.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| success | boolean | returns if it was able to create the directory |
+| success | boolean | returns `true` if it was able to create the directory |
 
 ## filesystem.remove(path: string, all: boolean?) -> success: boolean
 
@@ -112,7 +112,7 @@ Removes the filesystem object at the given path.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| success | boolean | returns if it was able to remove the node |
+| success | boolean | returns `true` if it was able to remove the node |
 
 ## filesystem.move(from: string, to: string) -> success: boolean
 
@@ -130,7 +130,7 @@ Function fails if it is not able to move the object.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| success | boolean | returns true if it was able to move the node |
+| success | boolean | returns `true` if it was able to move the node |
 
 ## filesystem.rename(path: string, name: string) -> success: boolean
 

@@ -1,4 +1,5 @@
-local FileSystem = require("tools.FileSystem")
+local Path = require("tools.Freemaker.bin.path")
+local FileSystem = require("tools.Freemaker.bin.filesystem")
 
 local args = { ... }
 if #args < 3 then
@@ -6,8 +7,8 @@ if #args < 3 then
 end
 
 local DocUpdater = args[1]
-local ApiDocumentationSource = FileSystem.Path(args[2])
-local ApiDocumentationOutput = FileSystem.Path(args[3])
+local ApiDocumentationSource = Path.new(args[2])
+local ApiDocumentationOutput = Path.new(args[3])
 
 local docSourceFolders = FileSystem.GetDirectories(ApiDocumentationSource:ToString())
 for _, sourceFolder in pairs(docSourceFolders) do
@@ -29,7 +30,7 @@ for _, sourceFolder in pairs(docSourceFolders) do
     for _, file in pairs(docSourceFiles) do
         local filePath = folderPath:Extend(file)
         local outputFilePath = outputSourceFolder
-            :Extend(FileSystem.Path(file):GetFileStem() .. ".md")
+            :Extend(Path.new(file):GetFileStem() .. ".md")
 
         local command = DocUpdater .. " -s \"" .. filePath:ToString() .. "\" -o \"" .. outputFilePath:ToString() .. "\""
         os.execute(command)
@@ -37,7 +38,3 @@ for _, sourceFolder in pairs(docSourceFolders) do
 
     ::continue::
 end
-
----@alias FIN.ALIASTEST integer
----| "Hi"
----| "Hello"
