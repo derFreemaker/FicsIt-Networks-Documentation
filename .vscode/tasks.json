@@ -5,7 +5,7 @@
 			"label": "create classes and structs intellisense",
 			"command": "lua",
 			"args": [
-				"${workspaceFolder}/Tools/CreateClassesAndStructsIntellisense.lua",
+				"${workspaceFolder}/tools/CreateClassesAndStructsIntellisense.lua",
 				"${workspaceFolder}/API Documentations"
 			],
 			"problemMatcher": [],
@@ -23,8 +23,8 @@
 			"label": "create documentation",
 			"command": "lua",
 			"args": [
-				"${workspaceFolder}/Tools/CreateDocumentation.lua",
-				"${workspaceFolder}/Tools/DocUpdater/DocUpdater.exe",
+				"${workspaceFolder}/tools/CreateDocumentation.lua",
+				"${workspaceFolder}/tools/DocUpdater/DocUpdater.exe",
 				"${workspaceFolder}/API Documentations",
 				"${workspaceFolder}/.pages/content/docs"
 			],

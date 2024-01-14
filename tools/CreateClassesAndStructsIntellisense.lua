@@ -1,4 +1,4 @@
-local FileSystem = require("Tools.FileSystem")
+local FileSystem = require("tools.FileSystem")
 
 local args = { ... }
 if #args < 1 then
