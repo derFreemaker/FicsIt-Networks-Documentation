@@ -1,0 +1,8 @@
+{
+    "Lua.workspace.ignoreDir": [
+        ".vscode",
+        ".github",
+        ".pages",
+        "**/Freemaker/src"
+    ]
+}
