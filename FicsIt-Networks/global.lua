@@ -56,5 +56,5 @@ Component.id = nil
 ---@type string
 Component.nick = nil
 
----@class FIN.PCIDevice
+---@class FIN.PCIDevice : Satisfactory.Components.Object
 local PCIDevice = {}
