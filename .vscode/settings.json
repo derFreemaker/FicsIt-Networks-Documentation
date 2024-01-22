@@ -4,5 +4,7 @@
         ".github",
         ".pages",
         "**/Freemaker/src"
-    ]
+    ],
+    "Lua.workspace.maxPreload": 100000,
+    "Lua.workspace.preloadFileSize": 1000
 }

@@ -1,6 +1,6 @@
 ---
 title: FIN.Component.Api
-date: "2024-01-14"
+date: "2024-01-22"
 ---
 
 # FIN.Component.Api
@@ -9,7 +9,7 @@ date: "2024-01-14"
 The Component API provides structures, functions and signals for interacting with the network itself like returning network components.
 
 
-## component.proxy(id: FIN.UUID) -> component: FIN.Component?
+## component.proxy(id: FIN.UUID) -> component: Satisfactory.Components.Object?
 
 Generates and returns instances of the network component with the given UUID.
 If a network component cannot be found for a given UUID, nil will be used for the return. Otherwise, an instance of the network component will be returned.
@@ -24,9 +24,9 @@ If a network component cannot be found for a given UUID, nil will be used for th
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| component | FIN.Component? |  |
+| component | Satisfactory.Components.Object? |  |
 
-## component.proxy(...FIN.UUID) -> ...FIN.Component?
+## component.proxy(...FIN.UUID) -> ...Satisfactory.Components.Object?
 
 Generates and returns instances of the network components with the given UUIDs.
 You can pass any amount of parameters and each parameter will then have a corresponding return value.
@@ -42,9 +42,9 @@ If a network component cannot be found for a given UUID, nil will be used for th
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| ... | FIN.Component? | components |
+| ... | Satisfactory.Components.Object? | components |
 
-## component.proxy(ids: FIN.UUID[]) -> components: FIN.Component[]
+## component.proxy(ids: FIN.UUID[]) -> components: Satisfactory.Components.Object[]
 
 Generates and returns instances of the network components with the given UUIDs.
 You can pass any amount of parameters and each parameter will then have a corresponding return value.
@@ -60,9 +60,9 @@ If a network component cannot be found for a given UUID, nil will be used for th
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| components | FIN.Component[] |  |
+| components | Satisfactory.Components.Object[] |  |
 
-## component.proxy(...FIN.UUID[]) -> ...FIN.Component[]
+## component.proxy(...FIN.UUID[]) -> ...Satisfactory.Components.Object[]
 
 Generates and returns instances of the network components with the given UUIDs.
 You can pass any amount of parameters and each parameter will then have a corresponding return value.
@@ -78,7 +78,7 @@ If a network component cannot be found for a given UUID, nil will be used for th
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| ... | FIN.Component[] | components |
+| ... | Satisfactory.Components.Object[] | components |
 
 ## component.findComponent(query: string) -> UUIDs: FIN.UUID[]
 

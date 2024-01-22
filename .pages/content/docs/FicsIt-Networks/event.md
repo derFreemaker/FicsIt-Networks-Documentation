@@ -1,6 +1,6 @@
 ---
 title: FIN.Event.Api
-date: "2024-01-14"
+date: "2024-01-22"
 ---
 
 # FIN.Event.Api

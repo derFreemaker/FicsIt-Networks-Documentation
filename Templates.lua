@@ -1,10 +1,15 @@
 ---@meta
 
+---
+--- # Class # ---
+
 --- Template class Description
 ---@class Template
 local Template
 
---- # Property
+---
+--- # Property # ---
+
 --- Description
 --- ### Flags:
 --- * Runtime Synchronous - Can be called/changed in Game Tick
@@ -13,18 +18,23 @@ local Template
 ---@type any
 Template.property = nil
 
---- # Function
+---
+--- # Function # ---
+
 --- Description
 --- ### Flags:
 --- * Runtime Synchronous - Can be called/changed in Game Tick.
 --- * Runtime Parallel - Can be called/changed in Satisfactory Factory Tick.
+--- * Runtime Asynchronous - Can be changed anytime.
 --- * Variable Arguments - Can have any additional arguments as described.
 ---@param test any Description parameter 1
 ---@return any returnName Description return parameter
 function Template:functionTemplate(test)
 end
 
---- # Signal
+---
+--- # Signal # ---
+
 --- Description
 ---
 --- ### returns from event.pull:
@@ -32,9 +42,9 @@ end
 --- local signalName, component, test, ... = event.pull()
 --- ```
 --- - `signalName: string` <br> -> "Signal"
---- - `component: Template` <br> -> The component wich send the signal.
+--- - `component: Template` <br> -> The component which send the signal.
 --- - `test: string` <br> -> description
---- - `...: any` <br> -> addtional parameters
+--- - `...: any` <br> -> additional parameters
 ---@deprecated
 ---@type FIN.Components.Signal
 Template.Signal = { isVarArgs = true }
