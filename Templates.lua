@@ -39,12 +39,11 @@ end
 ---
 --- ### returns from event.pull:
 --- ```
---- local signalName, component, test, ... = event.pull()
+--- local signalName, component, test = event.pull()
 --- ```
 --- - `signalName: string` <br> -> "Signal"
 --- - `component: Template` <br> -> The component which send the signal.
 --- - `test: string` <br> -> description
---- - `...: any` <br> -> additional parameters
 ---@deprecated
 ---@type FIN.Components.Signal
-Template.Signal = { isVarArgs = true }
+Template.Signal = { isVarArgs = false }

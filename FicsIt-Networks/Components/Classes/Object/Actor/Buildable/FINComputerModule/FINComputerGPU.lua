@@ -27,4 +27,4 @@ end
 --- - `oldScreen: FIN.Components.Screen?` <br> -> The screen which got unbounded.
 ---@deprecated
 ---@type FIN.Components.Signal
-FINComputerGPU.ScreenBound = {}
+FINComputerGPU.ScreenBound = { isVarArgs = false }

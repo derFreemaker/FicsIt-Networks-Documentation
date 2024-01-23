@@ -29,8 +29,9 @@
 ---@field InternetCard_C FIN.Components.InternetCard_C
 ---@field NetworkCard FIN.Components.NetworkCard
 ---@field NetworkCard_C FIN.Components.NetworkCard_C
----@field GPUT1 FIN.Components.GPUT1
+---@field FINComputerGPUT2 FIN.Components.FINComputerGPUT2
 ---@field GPU_T1_C FIN.Components.GPU_T1_C
+---@field GPUT1 FIN.Components.GPUT1
 ---@field ScreenDriver_C FIN.Components.ScreenDriver_C
 ---@field FINModuleScreen FIN.Components.FINModuleScreen
 ---@field ModuleScreen_C FIN.Components.ModuleScreen_C
@@ -56,6 +57,9 @@ classes = {}
 ---@field Vector Satisfactory.Components.Vector
 ---@field Future FIN.Components.Future
 ---@field GPUT1Buffer FIN.Components.GPUT1Buffer
+---@field GPUT2DrawCallBox FIN.Components.GPUT2DrawCallBox
 ---@field LogEntry FIN.Components.LogEntry
+---@field Margin FIN.Components.Margin
 ---@field Vector2D FIN.Components.Vector2D
+---@field Vector4 FIN.Components.Vector4
 structs = {}
