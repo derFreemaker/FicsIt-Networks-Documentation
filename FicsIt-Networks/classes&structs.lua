@@ -32,6 +32,7 @@
 ---@field FINComputerGPUT2 FIN.Components.FINComputerGPUT2
 ---@field GPU_T1_C FIN.Components.GPU_T1_C
 ---@field GPUT1 FIN.Components.GPUT1
+---@field GPU_T2_C FIN.Components.GPU_T2_C
 ---@field ScreenDriver_C FIN.Components.ScreenDriver_C
 ---@field FINModuleScreen FIN.Components.FINModuleScreen
 ---@field ModuleScreen_C FIN.Components.ModuleScreen_C

@@ -189,12 +189,11 @@ FINComputerGPUT2.OnMouseDown = { isVarArgs = false }
 ---
 --- ### returns from event.pull:
 --- ```
---- local signalName, component, position, wheelDelta, modifiers = event.pull()
+--- local signalName, component, position, modifiers = event.pull()
 --- ```
 --- - `signalName: string` <br> -> "OnMouseMove"
 --- - `component: FIN.Components.FINComputerGPUT2` <br> -> The component which send the signal.
 --- - `position: FIN.Components.Vector2D` <br> -> The position of the cursor.
---- - `wheelDelta: float` <br> -> The delta value of how much the mouse wheel got moved.
 --- - `modifiers: integer` <br> -> The Modifiers-Bit-Field providing information about the move event.<br> Bits:<br> 1. left-mouse<br> 2. right-mouse<br> 3. ctrl-key<br> 4. shift-key<br> 5. alt-key<br> 6. cmd-key
 ---@deprecated
 ---@type FIN.Components.Signal
@@ -227,6 +226,22 @@ FINComputerGPUT2.OnMouseLeave = { isVarArgs = false }
 ---@deprecated
 ---@type FIN.Components.Signal
 FINComputerGPUT2.OnMouseEnter = { isVarArgs = false }
+
+--//TODO: look over again
+-- --- Triggers when the mouse wheel moves on the screen.
+-- ---
+-- --- ### returns from event.pull:
+-- --- ```
+-- --- local signalName, component, position, wheelDelta, modifiers = event.pull()
+-- --- ```
+-- --- - `signalName: string` <br> -> "OnMouseWheel"
+-- --- - `component: FIN.Components.FINComputerGPUT2` <br> -> The component which send the signal.
+-- --- - `position: FIN.Components.Vector2D` <br> -> The position of the cursor.
+-- --- - `wheelDelta: float` <br> -> The delta value of how much the mouse wheel got moved.
+-- --- - `modifiers: integer` <br> -> The Modifiers-Bit-Field providing information about the move event.<br> Bits:<br> 1. left-mouse<br> 2. right-mouse<br> 3. ctrl-key<br> 4. shift-key<br> 5. alt-key<br> 6. cmd-key
+-- ---@deprecated
+-- ---@type FIN.Components.Signal
+-- FINComputerGPUT2.OnMouseWheel = { isVarArgs = false }
 
 --- Triggers when a key got released.
 ---
