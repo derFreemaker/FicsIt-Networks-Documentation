@@ -27,7 +27,7 @@ PipelinePump.designedHeadlift = nil
 ---@type float
 PipelinePump.indicatorHeadlift = nil
 
---- The amount of headlift the indicator shows as percantage from max.
+--- The amount of headlift the indicator shows as percentage from max.
 --- ### Flags:
 --- * Runtime Synchronous - Can be called/changed in Game Tick
 --- * Runtime Parallel - Can be called/changed in Satisfactory Factory Tick
@@ -35,13 +35,15 @@ PipelinePump.indicatorHeadlift = nil
 ---@type any
 PipelinePump.indicatorHeadliftPct = nil
 
---- The flow limit of this pump the user can specifiy. Use -1 for now user set limit. (in m^3/s)
+--- The flow limit of this pump the user can specify. Use -1 for now user set limit. (in m^3/s)
+--- * 1 = 6m^3/s
+--- * (0 - 10)
 --- ### Flags:
 --- * Runtime Parallel - Can be called/changed in Satisfactory Factory Tick
 ---@type any
 PipelinePump.userFlowLimit = nil
 
---- The overal flow limit of this pump. (in m^3/s)
+--- The overall flow limit of this pump. (in m^3/s)
 --- ### Flags:
 --- * Runtime Synchronous - Can be called/changed in Game Tick
 --- * Runtime Parallel - Can be called/changed in Satisfactory Factory Tick
@@ -49,7 +51,7 @@ PipelinePump.userFlowLimit = nil
 ---@type any
 PipelinePump.flowLimit = nil
 
---- The overal flow limit of this pump. (in percent)
+--- The overall flow limit of this pump. (in percent)
 --- ### Flags:
 --- * Runtime Synchronous - Can be called/changed in Game Tick
 --- * Runtime Parallel - Can be called/changed in Satisfactory Factory Tick

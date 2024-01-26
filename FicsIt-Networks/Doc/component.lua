@@ -9,29 +9,33 @@ component = {}
 
 --- Generates and returns instances of the network component with the given UUID.
 --- If a network component cannot be found for a given UUID, nil will be used for the return. Otherwise, an instance of the network component will be returned.
+---@generic T : Satisfactory.Components.Object
 ---@param id FIN.UUID - UUID of a network component.
----@return Satisfactory.Components.Object? component
+---@return T? component
 function component.proxy(id) end
 
 --- Generates and returns instances of the network components with the given UUIDs.
 --- You can pass any amount of parameters and each parameter will then have a corresponding return value.
 --- If a network component cannot be found for a given UUID, nil will be used for the return. Otherwise, an instance of the network component will be returned.
+---@generic T : Satisfactory.Components.Object
 ---@param ... FIN.UUID - UUIDs
----@return Satisfactory.Components.Object? ... - components
+---@return T? ... - components
 function component.proxy(...) end
 
 --- Generates and returns instances of the network components with the given UUIDs.
 --- You can pass any amount of parameters and each parameter will then have a corresponding return value.
 --- If a network component cannot be found for a given UUID, nil will be used for the return. Otherwise, an instance of the network component will be returned.
+---@generic T : Satisfactory.Components.Object
 ---@param ids FIN.UUID[]
----@return Satisfactory.Components.Object[] components
+---@return T[] components
 function component.proxy(ids) end
 
 --- Generates and returns instances of the network components with the given UUIDs.
 --- You can pass any amount of parameters and each parameter will then have a corresponding return value.
 --- If a network component cannot be found for a given UUID, nil will be used for the return. Otherwise, an instance of the network component will be returned.
+---@generic T : Satisfactory.Components.Object
 ---@param ... FIN.UUID[]
----@return Satisfactory.Components.Object[] ... - components
+---@return T[] ... - components
 function component.proxy(...) end
 
 --- Searches the component network for components with the given query.
