@@ -92,8 +92,8 @@ end
 ---@param x integer The X Position at which the text should begin to get written.
 ---@param y integer The Y Position at which the text should begin to get written.
 ---@param text string The text that should get written.
----@param foreground Satisfactory.Components.Color The foreground color which will be used to write the text.
----@param background Satisfactory.Components.Color The background color which will be used to write the text.
+---@param foreground Satisfactory.Components.Color? The foreground color which will be used to write the text.
+---@param background Satisfactory.Components.Color? The background color which will be used to write the text.
 function GPUT1Buffer:setText(x, y, text, foreground, background)
 end
 
