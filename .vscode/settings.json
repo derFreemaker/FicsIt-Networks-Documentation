@@ -3,7 +3,8 @@
         ".vscode",
         ".github",
         ".pages",
-        "**/Freemaker/src"
+        "**/Freemaker/src",
+        "FINLuaDocumentation.lua"
     ],
     "Lua.workspace.maxPreload": 100000,
     "Lua.workspace.preloadFileSize": 1000
