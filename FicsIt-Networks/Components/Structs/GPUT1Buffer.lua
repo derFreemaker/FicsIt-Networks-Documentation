@@ -107,8 +107,8 @@ end
 ---@param width integer The width of the rectangle.
 ---@param height integer The height of the rectangle.
 ---@param char string A string with a single character that will be used for each pixel in the range you want to fill.
----@param foreground Satisfactory.Components.Color The foreground color which will be used to fill the rectangle.
----@param background Satisfactory.Components.Color The background color which will be used to fill the rectangle.
+---@param foreground Satisfactory.Components.Color? The foreground color which will be used to fill the rectangle.
+---@param background Satisfactory.Components.Color? The background color which will be used to fill the rectangle.
 function GPUT1Buffer:fill(x, y, width, height, char, foreground, background)
 end
 
