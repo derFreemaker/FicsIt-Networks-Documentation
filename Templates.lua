@@ -12,9 +12,10 @@ local Template
 
 --- Description
 --- ### Flags:
---- * Runtime Synchronous - Can be called/changed in Game Tick
---- * Runtime Parallel - Can be called/changed in Satisfactory Factory Tick
---- * Read Only - The value of this property can not be changed by code
+--- * Runtime Synchronous - Can be called/changed in Game Tick.
+--- * Runtime Parallel - Can be called/changed in Satisfactory Factory Tick.
+--- * Runtime Asynchronous - Can be changed anytime.
+--- * Read Only - The value of this property can not be changed by code.
 ---@type any
 Template.property = nil
 
@@ -41,9 +42,10 @@ end
 --- ```
 --- local signalName, component, test = event.pull()
 --- ```
---- - `signalName: string` <br> -> "Signal"
---- - `component: Template` <br> -> The component which send the signal.
---- - `test: string` <br> -> description
+--- - `signalName: "Signal"`
+--- - `component: Template`
+--- - `test: string` <br>
+--- description
 ---@deprecated
 ---@type FIN.Components.Signal
 Template.Signal = { isVarArgs = false }
