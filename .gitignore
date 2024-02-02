@@ -7,6 +7,7 @@
 
 # ignore .stfolder used for Syncthing
 .stfolder/
+.stversions/
 
 # ignore .vs folder
 .vs/
